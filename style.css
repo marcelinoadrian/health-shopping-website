@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+ }
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background: white;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.018), 0 3px 6px rgba(0, 0, 0, 0.129);
+
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    color: green;
+}
+
+header a {
+    transition: all 0.2s linear;
+}
+
+header a:hover {
+    font-weight: 900;
+}
+
+.accBtn {
+    margin: 0 30px;
+}
+
+.accBtn a {
+    text-decoration: none;
+    color: green;
+
+}
+
+/* login-signup-reg-rating styles */
+.picture {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/pexels-jill-wellington-257816.jpg) center/cover fixed no-repeat;
+    height: 500px;
+}
+
+#text {
+
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.apples,
+.banana,
+.turmeric,
+.broccoli,
+.cucumber {
+    padding: 20px;
+    display: flex;
+    padding-left: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+
+.reg {
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    height: 100vh;
+   
+
+}
+
+.regBanner {
+
+    width: 65vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/pexels-suzy-hazelwood-1120575.jpg) center/cover fixed no-repeat;
+    float: left;
+}
+#email,
+#pword,
+#cpword,
+#name,
+#bday,
+#cnumber,
+#reset,
+#submit,
+#username {
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#regLogo {
+
+
+    border: 1px solid black;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+/* about page */
+.about
+{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+}
+
+.about img
+{
+    width: 350px;
+}
+
+.about .txtDiv
+{
+    text-align: right;
+    width: 500px;
+}
+.abtText
+{
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+.members
+{
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.members a
+{
+    text-decoration: none;    
+}
+
+
+.members img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+/* Hospitals */
+
+
+.hospitals
+{
+    padding: 150px;
+}
+.hospitals img
+{
+    width: 400px;
+}
+
+.hospitals .hospText
+{
+    width: 400px;
+
+}
+.hospitals a
+{
+    text-decoration: none;
+    color: white;
+    background: #E8CB01;
+    padding: 10px;
+    transition: all 0.2s linear;
+}
+.hospitals a:hover
+{
+    background: #857300;
+}
+
+.hosp-1, .hosp-2, .hosp-3
+{
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+/* admin */
+.admin section
+{
+    padding: 150px;
+}
+.admin form
+{
+    background-color: rgba(128, 128, 128, 0.486);
+    padding: 50px;
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+.admin form input
+{
+    width: 400px;
+    padding: 8px;
+    background: white;
+    border: none;
+    margin: 8px;
+}
+
+
+.admin-header a
+{
+    color: white;
+}
+
+.admin-header
+{
+    background: green;
+    position: sticky;
+    top: 0;
+}
+
+.admin .add-btn
+{
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+.container
+{
+    padding: 100px;
+}
+
+/* cart page EDIT STARTING FROM HERE */
+.delete-btn
+{
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.option-btn
+{
+    background: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.cart table{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+ }
+ 
+ .cart table thead th{
+    padding: 10px;
+    color: white;
+    background-color: green;
+ }
+ 
+ .cart table tr, td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    padding:5px;
+    color: black;
+ }
+ 
+ .cart .checkout-btn
+ {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+ }
+ .cart .checkout-btn a{
+    display: inline-block;
+    width: auto;
+    background: green;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+ }
+
+/* checkout */
+.checkout-form form{
+    padding: 1rem;
+    border-radius: 10px;
+    background: #eee;
+ }
+ 
+ .checkout-form form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+ }
+ 
+ .checkout-form form .flex .inputBox{
+    flex:1 1 30rem;
+ }
+ 
+ .checkout-form form .flex .inputBox span{
+
+    color:#333; 
+ }
+ 
+ .checkout-form form .flex .inputBox input,
+ .checkout-form form .flex .inputBox select{
+    width: 100%;
+    background-color: #fff;
+    color:#333; 
+    border-radius: 10px;
+    margin:1rem 0;
+    padding:1.2rem 1.4rem;
+    text-transform: none;
+    border:.1rem solid #999;
+ }
+
+ 
+.display-order{
+    max-width: 50rem;
+    background-color: #fff;
+    border-radius: .10px;
+    text-align: center;
+    padding:1rem;
+    margin:0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid #999;
+ }
+ 
+ .display-order span{
+    display: inline-block;
+    border-radius: .5rem;
+    background-color:#eee;
+    padding:.5rem 1rem;
+    font-size: 1rem;
+    color:#333; 
+    margin:.5rem;
+ }
+ 
+ .display-order span.grand-total{
+    width: 100%;
+    background-color: green;
+    color:#fff;
+    padding:1rem;
+    margin-top: 1rem;
+ }
+
+ /* order transaction message */
+ 
+.order-message-container{
+    position: fixed;
+    top:0; 
+    left:0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+ }
+ 
+ .order-message-container::-webkit-scrollbar{
+    width: 1rem;
+ }
+ 
+ .order-message-container::-webkit-scrollbar-track{
+    background-color: #fff;
+ }  
+ 
+ .order-message-container::-webkit-scrollbar-thumb{
+    background-color: #333;
+ }
+ 
+ .order-message-container .message-container{
+    width: 40rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:2rem;
+    text-align: center;
+ }
+ 
+ .order-message-container .message-container h3{
+    color:#333;
+ }
+ 
+ .order-message-container .message-container .order-detail{
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    padding:1rem;
+    margin:1rem 0;
+ }
+ 
+ .order-message-container .message-container .order-detail span{
+    background-color: #eee;
+    border-radius: 10px;
+    color:#333; 
+    display: inline-block;
+    padding:1rem 1.5rem;
+    margin:1rem;
+ }
+ 
+ .order-message-container .message-container .order-detail span.total{
+    display: block;
+    background: green;
+    color:white;
+ }
+ 
+ .order-message-container .message-container .customer-details{
+    margin:1.5rem 0;
+ }
+ 
+ .order-message-container .message-container .customer-details p{
+    padding:0.5rem 0;
+    color:#333; 
+ }
+ 
+ .order-message-container .message-container .customer-details p span{
+    color:#2980b9;
+    padding:0 .5rem;
+    text-transform: none;
+ }
+ 
+ 
+

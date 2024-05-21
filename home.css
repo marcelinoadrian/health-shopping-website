@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.banner h1
+{
+    font-size: 2.5rem;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background: white;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.018), 0 3px 6px rgba(0, 0, 0, 0.129);
+
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    color: green;
+}
+
+header a {
+    transition: all 0.2s linear;
+}
+
+header a:hover {
+    font-weight: 900;
+}
+
+.accBtn {
+    margin: 0 30px;
+}
+
+.accBtn a {
+    text-decoration: none;
+
+}
+
+section {
+    padding-top: 150px;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url('./images/background.png') center/cover scroll no-repeat;
+}
+
+.banner {
+    margin: 20px 150px;
+}
+
+.featured {
+    width: calc(100% - 200px);
+    height: 350px;
+    background: white;
+    margin: 50px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured img {
+    width: 200px;
+    height: 150px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    width: calc(100% - 200px);
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+
+}
+
+.item p,
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.item img {
+    width: 200px;
+}
+
+.item {
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.item .itemTxt {
+    text-align: start;
+    height: 70px;
+
+}
+
+.item .itemLink {
+
+    text-align: center;
+    height: 70px;
+
+}
+
+.item a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.item .itemText {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.itemText .addLink {
+    background: #DBFF00;
+    color: black;
+}
+
+.itemText .buyLink {
+    background: black;
+    color: white;
+}
+
+.abtPanel {
+    background: #001406;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+
+.about img {
+    width: 350px;
+}
+
+.about .txtDiv {
+    text-align: right;
+    width: 500px;
+}
+
+.abtText {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.members {
+    margin-top: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.members h3 {
+    color: white;
+}
+
+.members a {
+    text-decoration: none;
+}
+
+
+.members img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.header a {
+    color: green;
+}
+
+.header span i{
+    color: green;
+}
+.header span
+{
+    color: green;
+}
+
+.header {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.018), 0 3px 6px rgba(0, 0, 0, 0.129);
+}
